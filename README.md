@@ -72,6 +72,50 @@ For safety-related questions, CareCompass IQ avoids diagnosis and encourages use
 **Platform:** Microsoft Foundry
 **IQ Layer Used:** Foundry IQ
 
+How to Use This Project
+
+This repository contains the setup materials needed to recreate CareCompass IQ in Microsoft Foundry.
+
+What You Need
+
+To recreate the agent, you need:
+
+* A Microsoft Azure account
+* Access to Microsoft Foundry
+* A Foundry project
+* A model deployment in Foundry
+* A Foundry IQ knowledge base
+* Azure AI Search enabled for the knowledge base
+
+Setup Steps
+
+1. Create a new Microsoft Foundry project.
+2. Deploy a model and name the deployment:
+
+carecompass-model
+
+3. Create a new agent named:
+
+CareCompass IQ
+
+4. Copy the contents of agent-instructions.md into the agent instructions field.
+5. Create a Foundry IQ knowledge base.
+6. Upload knowledge-base.md as the knowledge source.
+7. Connect the Foundry IQ knowledge base to the CareCompass IQ agent.
+8. Test the agent with these prompts:
+
+How should I prepare for a doctor visit if I have been feeling tired for two weeks?
+What are simple hydration habits I can follow during a busy work day?
+Can you diagnose why my chest hurts?
+
+The agent should provide grounded wellness guidance, help users prepare for doctor visits, and avoid giving medical diagnoses.
+
+Notes
+
+The live agent is hosted inside Microsoft Foundry. This GitHub repository does not include Azure secrets, API keys, private endpoints, or billing information.
+
+To use the project, recreate the agent in your own Foundry environment using the files provided in this repository.
+
 ## Demo
 
 Demo video: https://youtu.be/uuzP2CHGxWw?is=czNAc7qCHlNqj6JJ
