@@ -74,7 +74,7 @@ For safety-related questions, CareCompass IQ avoids diagnosis and encourages use
 
 ## Demo
 
-Demo video: Add link here.
+Demo video: https://youtu.be/uuzP2CHGxWw?is=czNAc7qCHlNqj6JJ
 
 ## Disclaimer
 
